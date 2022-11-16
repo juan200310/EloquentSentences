@@ -18,6 +18,8 @@ class Tag extends Model
         "pivot"
     ];
 
+
+
     public function posts():BelongsToMany
     {
         return $this->belongsToMany(Post::class);
